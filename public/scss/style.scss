@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'component/index';
+
+body {
+    font-family: $primaryFont;
+    margin: 0;
+    padding: 0;
+    color: #959595;
+    background: #f6f7fb;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.primary-btn {
+    @include primaryBtn;
+}
+
+.primary-outline-btn {
+    @include primaryOutlineBtn;
+}
+
+.secondary-btn {
+    @include secondaryBtn;
+}
+
+.section-heading {
+    @include sectionHeading;
+}

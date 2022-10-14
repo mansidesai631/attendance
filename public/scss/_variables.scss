@@ -1,0 +1,101 @@
+/* Color system */
+
+$black: #000000;
+$darkBlue_11183D: #11183D;
+$white: #ffffff;
+$offwhite: #f2f2f2;
+$blue_2A3884: #2A3884;
+$blue_1B2C85: #1B2C85;
+$camarel: #f1592a;
+$gray_717482: #717482;
+$gray_EBEBEB: #EBEBEB;
+$blue_D8DBEA: #D8DBEA;
+$primatyColor: $blue_2A3884;
+$linkedin: #0A66C2;
+$gray_F9F9F9: #F9F9F9;
+
+/* Transition */
+
+$transition_3ms: 0.3s all ease-in-out;
+
+/* FontFamily */
+
+$primaryFont: 'Poppins';
+$secondaryFont: 'Roboto';
+$segoeUIFont: 'Segoe UI';
+$circularStdFont: 'Circular Std';
+
+/* Font Size */
+
+$f10: 10px;
+$f12: 12px;
+$f13: 13px;
+$f14: 14px;
+$f15: 15px;
+$f16: 16px;
+$f17: 17px;
+$f18: 18px;
+$f19: 19px;
+$f20: 20px;
+$f22: 22px;
+$f23: 23px;
+$f24: 24px;
+$f25: 25px;
+$f26: 26px;
+$f28: 28px;
+$f30: 30px;
+$f32: 32px;
+$f34: 34px;
+$f36: 36px;
+$f40: 40px;
+$f42: 42px;
+$f44: 44px;
+$f45: 45px;
+$f48: 48px;
+$f50: 50px;
+$f52: 52px;
+$f53: 53px;
+$f54: 54px;
+$f55: 55px;
+$f60: 60px;
+$f67: 67px;
+$f70: 70px;
+$f75: 75px;
+
+/* Media Query Break Point START */
+
+$brkmn576: '(min-width: 576px)';
+$brkmn768: '(min-width: 768px)';
+$brkmn992: '(min-width: 992px)';
+$brkmn1200: '(min-width: 1200px)';
+$brkmn1366: '(min-width: 1366px)';
+$brkmn1600: '(min-width: 1600px)';
+$brkmx1599: '(max-width: 1599px)';
+$brkmx1499: '(max-width: 1499px)';
+$brkmx1365: '(max-width: 1365px)';
+$brkmx1199: '(max-width: 1199px)';
+$brkmx1099: '(max-width: 1099px)';
+$brkmx991: '(max-width: 991px)';
+$brkmx767: '(max-width: 767px)';
+$brkmx599: '(max-width: 599px)';
+$brkmx575: '(max-width: 575px)';
+$brkmx450: '(max-width: 450px)';
+$brkmx400: '(max-width: 400px)';
+$brk1200-1366: '(min-width: 1200px) and (max-width: 1366px)';
+$brk1100-1199: '(min-width: 1100px) and (max-width: 1199px)';
+$brk992-1367: '(min-width: 992px) and (max-width: 1367px)';
+$brk992-1199: '(min-width: 992px) and (max-width: 1199px)';
+$brk992-1099: '(min-width: 992px) and (max-width: 1099px)';
+$brk768-1024: '(min-width: 768px) and (max-width: 1024px)';
+$brk768-991: '(min-width: 768px) and (max-width: 991px)';
+
+/* Media Query Break Point START */
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+
+/* Media Query Break Point END */

@@ -1,0 +1,129 @@
+@mixin primaryBtn {
+    background-color: $camarel;
+    color: $blue_1B2C85;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: $f14;
+    font-weight: bold;
+    line-height: 17px;
+    font-family: $secondaryFont;
+    transition: $transition_3ms;
+
+    &:hover {
+        color: $blue_1B2C85;
+        transform: translateY(-3px);
+        background-color: darken($camarel , 8%);
+        box-shadow: 0 5px 10px rgba($black , 0.2);
+    }
+}
+
+@mixin primaryOutlineBtn {
+    background-color: transparent;
+    color: $blue_1B2C85;
+    border: 2px solid $camarel;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: $f14;
+    font-weight: bold;
+    line-height: 17px;
+    font-family: $secondaryFont;
+    position: relative;
+    transition: $transition_3ms;
+
+    &:hover {
+        color: $blue_1B2C85;
+        &:before, &:after {
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            border-color: $blue_1B2C85;
+        }
+    }
+
+    &:before, &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-radius: 4px;
+        transition: .5s;
+    }
+
+    &:before {
+        bottom: -2px;
+        right: -2px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+    &:after {
+        top: -2px;
+        left: -2px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+}
+
+@mixin secondaryBtn {
+    background-color: $blue_2A3884;
+    color: $white;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: $f14;
+    font-weight: bold;
+    line-height: 17px;
+    font-family: $secondaryFont;
+    transition: $transition_3ms;
+
+    &:hover {
+        color: $blue_1B2C85;
+        background-color: transparent;
+        &:before, &:after {
+            width: calc(100% + 0px);
+            height: calc(100% + 0px);
+            border-color: $blue_1B2C85;
+        }
+    }
+
+    &:before, &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-radius: 4px;
+        transition: .5s;
+    }
+
+    &:before {
+        bottom: 0px;
+        right: 0px;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+    &:after {
+        top: 0px;
+        left: 0px;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+}
+
+@mixin sectionHeading {
+    font-size: $f42;
+    font-weight: 600;
+    line-height: 52px;
+    color: $camarel;
+    transition: $transition_3ms;
+
+    @include respond-to($brkmx1599) {
+        font-size: $f30;
+        line-height: normal;
+    }
+}

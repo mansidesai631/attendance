@@ -1,0 +1,88 @@
+.self-service-container {
+    padding: 4px 0;
+    margin-bottom: 16px;
+    border: 2px solid #d3d3d3;
+    border-radius: 4px;
+    color: #222;
+    font-size: .875em;
+    .header{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .self-service-card {
+        border-radius: 70px;
+        font-weight: 500;
+        padding-right: 0.5rem;
+        position: relative;
+        margin: 5px 0;
+        padding-left: 8px;
+        box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+        border: none;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        .pending-action-icon {
+            height: 22px;
+        }
+        .header{
+            font-size: 14px;
+            padding: 7px 8px;
+        }
+        .action-close-btn{
+            .mat-icon{
+                color: #6c757d;
+                height: 22px;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+.blinking {
+    -webkit-animation: blinkingBorder 1s ease-in-out 10;
+    animation: blinkingBorder 1s ease-in-out 10;
+}
+.blinking{-webkit-animation:blinkingBorder 1s ease-in-out 10;animation:blinkingBorder 1s ease-in-out 10}@-webkit-keyframes blinkingBorder{0%{border:2px solid hsla(0,0%,82.7%,0)}30%{border:2px solid hsla(0,0%,82.7%,.8)}to{border:2px solid #d3d3d3}}@keyframes blinkingBorder{0%{border:2px solid hsla(0,0%,82.7%,0)}30%{border:2px solid hsla(0,0%,82.7%,.8)}to{border:2px solid #d3d3d3}}
+
+.cs-filter{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 11;
+    .dropdown-menu{
+        min-width: 580px;
+        padding: 30px;
+        box-shadow: 0 9px 15px 0 rgba(101, 101, 101, 0.38);
+        background: #fff;
+        .form-check-input{
+            &:checked {
+                border-color: #ff4081;
+                background-color: #ff4081;
+            }
+            &:focus, &:hover{
+               &:before{
+                    box-shadow: 0 0 0 13px rgba(255, 64, 128, 0.60);
+               }
+            }
+        }
+    }
+}
+
+.cs-dropdown-menu{
+    .dropdown-menu{
+        padding: 20px;
+        box-shadow: 0 9px 15px 0 rgba(101, 101, 101, 0.38);
+        background: #fff;
+        .form-check-input{
+            &:checked {
+                border-color: #ff4081;
+                background-color: #ff4081;
+            }
+            &:focus, &:hover{
+               &:before{
+                    box-shadow: 0 0 0 13px rgba(255, 64, 128, 0.60);
+               }
+            }
+        }
+    }
+}

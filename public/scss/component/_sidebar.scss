@@ -1,0 +1,293 @@
+
+
+  .as-nav-top{
+    background: linear-gradient(to right, rgba(24, 113, 209 , 1), rgba(49, 146, 249, 1));
+    box-shadow: 0 1px 5px 0 rgba(4, 26, 55, 0.14);
+    min-height: 56px;
+    padding: 0;
+    .route-name{
+      position: relative;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-weight: 500;
+      letter-spacing: .5px;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+    .navbar-brand{
+      font-size: 14px;
+    }
+    .navbar-nav {
+      .nav-link {
+        color: $white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        &.dropdown-toggle{
+          &:after {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .support-btn{
+      padding: 0 16px 0 0;
+    }
+    .user-profile {
+      padding: 0 0 0 16px;
+      img {
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+      }
+      .user-info{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .user-name{
+          display: flex;
+          flex-direction: column;
+          line-height: 1;
+          font-size: 15px!important;
+        }
+        .user-role{
+          top: 5px;
+          font-size: 11px;
+          line-height: 1;
+          position: relative;
+          color: #fff;
+        }
+      }
+      .vl-user-profile{
+        width: 1px;
+        background: rgba(204, 204, 204, 0.80);
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 55%;
+        left: 0;
+      }
+      
+      .dropdown-menu{
+        min-width: 264px;
+        &:before{
+          content: "";
+          border-color: #fff transparent transparent #fff;
+          border-style: solid;
+          border-width: 10px;
+          position: absolute;
+          border-radius: 5px;
+          top: -8px;
+          right: 10px;
+          box-shadow: -11px -11px 35px 0 rgba(0, 0, 0, 0.25);
+          transform: rotate(45deg);
+          z-index: 9;
+        }
+        img{
+          width: 18px;
+          height: 18px;
+        }
+        .dropdown-item{
+          color: #222;
+          padding: 1em 20px;
+          transition: all .3s ease-in-out;
+          &.active,
+          &:active,
+          &:focus, 
+          &:hover {
+            color: #16181b;
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+    .header-notification{
+      padding: 0 16px 0 0;
+    }
+    .site-list{
+      padding: 0 16px 0 0;
+      .nav-link{
+        font-size: 13px;
+      }
+      .mat-search{
+        border-bottom: 1px solid rgba(0,0,0,.12);
+        border-radius: 4px 4px 0 0;
+        .mat-input-element{
+          border: 0;
+          padding: 10px 44px 10px 16px;
+          border-radius: 4px 4px 0 0;
+          outline: none;
+        }
+      }
+    }
+    .hamburger-menu-icon{
+      position: absolute;
+      top: 20px;
+      left: 16px;
+      display: inline-block;
+      width: 16px;
+      cursor: pointer;
+      span{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        opacity: 1;
+        left: 0;
+        &:first-child {
+          top: 2px;
+        }
+        &:nth-child(2) {
+          top: 7px;
+        }
+        &:nth-child(3) {
+          top: 12px;
+        }
+      }
+    }
+  }
+
+// left sidebar
+
+.as-left-nav{
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  width: 202px;
+  z-index: 600;
+  box-shadow: 0 0 2.94px 0.06px rgba(4, 26, 55, 0.16);
+  transition: all .2s ease;
+  margin-left: -250px;
+  &.show {
+    border-radius: 5px;
+    margin-left: 0;
+  }
+  .site-logo {
+    width: 100%;
+    height: 103px;
+    margin: 0!important;
+    padding: 10px 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar-menus{
+    li{
+      a{
+        color: #666;
+        text-align: left;
+        padding: 9px 10px;
+        display: block;
+        font-size: 13px;
+        text-decoration: none;
+        position: relative;
+        transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        border: 0;
+        i{
+          color: #222;
+          font-size: 14px;
+          margin-right: 10px;
+          padding: 5px;
+        }
+        &:before{
+          border-left-style: solid;
+          border-left-width: 5px;
+          border-color: transparent;
+          content: " ";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+        &.active{
+            background: rgba(202, 202, 202, 0.30);
+            font-weight: 600;
+            &:before{
+              border-radius: 0 10px 10px 0;
+              border-left-color: #1871d1;
+            }
+         }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .as-left-nav {
+    width: 100%;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+.truein-logo-section{
+  position: fixed;
+  bottom: 1px;
+  left: 0;
+  width: 202px;
+  padding: 10px 18px 8px 18px;
+  background: #fff;
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(0deg,#000,#fff) 4;
+  border-image: linear-gradient(0deg,#000,#fff) 4;
+  justify-content: center;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+  text-align: center;
+  img{
+    width: 40%;
+    height: 100%;
+  }
+}
+
+// .custom-padding.blocktext{
+//   padding: 0 111px 0 165px;
+// }
+
+
+@media (max-width: 991.98px) {
+  .route-name{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: flex-start;
+  }
+  .mobile-options {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #fff;
+  }
+  .user-profile{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  .vl-user-profile{
+    display: none;
+  }
+}
+
+
+

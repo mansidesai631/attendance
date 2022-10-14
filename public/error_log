@@ -1,0 +1,51 @@
+[22-Jun-2022 13:41:32 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:41:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/public/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:41:35 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:41:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/public/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:42:57 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:42:57 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/public/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:43:23 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:43:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/public/../attendance-system/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/public/index.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/lapp/public_html/attendance-system/public/index.php on line 32
+[22-Jun-2022 13:55:50 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/public/vendor/autoload.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/public/index.php on line 33
+[22-Jun-2022 13:55:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/public/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/public/index.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/lapp/public_html/attendance-system/public/index.php on line 33
+[29-Jun-2022 07:40:52 UTC] PHP Warning:  POST Content-Length of 21654891 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Jul-2022 14:14:18 UTC] PHP Warning:  Unknown: POST Content-Length of 10389628 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Jul-2022 14:18:29 UTC] PHP Warning:  Unknown: POST Content-Length of 10389626 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Jul-2022 14:22:21 UTC] PHP Warning:  Unknown: POST Content-Length of 10389626 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Jul-2022 14:25:32 UTC] PHP Warning:  Unknown: POST Content-Length of 10389627 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[12-Jul-2022 14:29:23 UTC] PHP Warning:  Unknown: POST Content-Length of 10389628 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[15-Jul-2022 10:30:51 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 10518528 bytes) in /home/lapp/public_html/attendance-system/app/Http/Controllers/v1/Api/FacematchController.php on line 125
+[15-Jul-2022 11:44:48 UTC] PHP Warning:  POST Content-Length of 11908718 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[15-Jul-2022 11:46:50 UTC] PHP Warning:  POST Content-Length of 11908718 bytes exceeds the limit of 8388608 bytes in Unknown on line 0
+[16-Jul-2022 11:24:04 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/vendor/composer/../../app/Helpers/helpers.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php on line 78
+[16-Jul-2022 11:24:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php(61): composerRequiredc601f73f51da107e826b8efb2e8502a('d21d43db5f6e840...', '/home/lapp/publ...')
+#1 /home/lapp/public_html/attendance-system/vendor/autoload.php(7): ComposerAutoloaderInitdc601f73f51da107e826b8efb2e8502a::getLoader()
+#2 /home/lapp/public_html/attendance-system/public/index.php(34): require('/home/lapp/publ...')
+#3 {main}
+  thrown in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php on line 78
+[16-Jul-2022 11:24:08 UTC] PHP Warning:  require(/home/lapp/public_html/attendance-system/vendor/composer/../../app/Helpers/helpers.php): Failed to open stream: No such file or directory in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php on line 78
+[16-Jul-2022 11:24:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/lapp/public_html/attendance-system/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php(61): composerRequiredc601f73f51da107e826b8efb2e8502a('d21d43db5f6e840...', '/home/lapp/publ...')
+#1 /home/lapp/public_html/attendance-system/vendor/autoload.php(7): ComposerAutoloaderInitdc601f73f51da107e826b8efb2e8502a::getLoader()
+#2 /home/lapp/public_html/attendance-system/public/index.php(34): require('/home/lapp/publ...')
+#3 {main}
+  thrown in /home/lapp/public_html/attendance-system/vendor/composer/autoload_real.php on line 78
+[18-Jul-2022 06:06:37 UTC] PHP Warning:  POST Content-Length of 11454665 bytes exceeds the limit of 8388608 bytes in Unknown on line 0

@@ -1,0 +1,174 @@
+.table-bordered>:not(caption)>*>* {
+    border-width: 1px 1px 0 0;
+}
+.table-bordered{
+    font-family: $primaryFont;
+    tr{
+        td{
+            border-color: #e6e6e6;
+            &:first-child{
+                border-left: 1px solid #e6e6e6;
+            }
+        }
+        th{
+            font-weight: 600;
+            border-color: #e6e6e6;
+            &:first-child{
+                border-left: 1px solid #e6e6e6;
+            }
+        }
+    }
+    &.dataTable{
+        th{
+            border-bottom: 0;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        td{
+            border-bottom: 0;
+            font-weight: 400;
+            font-size: 14px;
+            .cs-badge{
+                &.label{
+                    border-radius: 10px;
+                    font-size: .8em;
+                    padding: 3px 11px;
+                    margin-right: 0;
+                    font-weight: 400;
+                    color: #fff!important;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    text-transform: capitalize;
+                }
+                &.label-danger {
+                    background: linear-gradient(45deg,#ff5370,#ff869a);
+                }
+                &.label-info {
+                    background: linear-gradient(45deg,#00bcd4,#08e3ff);
+                }
+            }
+            .vl{
+                position: relative;
+                height: 30px;
+                border-right: 1px solid #e8e8e8;
+                left: 0;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+.dataTables_wrapper{
+    .dataTables_filter{
+        font-size: 0;
+        margin-right: 40px;
+        label{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            input{
+                border: 0;
+                border-bottom: 1px solid;
+                border-radius: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    border: 1px solid #fff !important;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.dataTables_length{
+    margin-top: 30px;
+    label{
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+        color: rgba(0,0,0,.54);
+        align-items: center;
+        .form-select{
+            min-width: 50px;
+
+        }
+    }
+}
+.dataTables_info{
+    clear: none !important;
+    // margin-left: 50px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgba(0,0,0,.54) !important;
+}
+table.dataTable {
+    // width: 100% !important;
+    margin: 0;
+}
+// .dataTables_scrollHeadInner{  width:100% !important; }
+// .dataTables_scrollHeadInner table{  width:100% !important; }
+
+// .dataTables_scrollBody{  width:100% !important; }
+// .dataTables_scrollBody table{  width:100% !important; }
+
+.pagination{
+    margin-bottom: 0;
+}
+.dataTables_wrapper .dataTables_paginate{
+    padding-top: 15px;
+}
+mat-error{
+    font-size: 70%;
+    color: #f44336;
+    margin-top: 5px;
+    display: block;
+}
+@Mansi Desai  create temporary one css file and paste this code
+@media (max-width: 767px) {
+  .responsive-table.dataTable {
+    width: 100% !important;
+  }
+  .responsive-table.dataTable th {
+    display: none;
+  }
+  .responsive-table.dataTable td {
+    border: 1px solid #e6e6e6;
+    display: block;
+    font-size: 1em;
+    text-align: right !important;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    margin-bottom: 0;
+    padding-bottom: 2%;
+  }
+  .responsive-table.dataTable td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .85em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+  .responsive-table.dataTable td .name-row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .responsive-table.dataTable td .name-row .name-text .d-flex {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .dataTables_wrapper .dataTables_paginate .pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dataTables_wrapper .dataTables_paginate .pagination .paginate_button {
+    padding: 0 6px;
+  }
+}

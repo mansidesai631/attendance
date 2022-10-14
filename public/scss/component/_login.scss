@@ -1,0 +1,157 @@
+.login-page, .login-page > .container, .login-page > .container > .row {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+.login-page, .login_content {
+    color: #73879C;
+    .login-from-wrap {
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.16);
+        .login-header {
+            padding: 30px 15px;
+            background-color: #f3f3f3;
+            img{
+                max-height: 60px;
+                width: auto;
+            }
+        }
+        .login-body {
+            padding: 15px;
+            .form-group{
+                label{
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .login-footer {
+            padding: 10px 5px;
+            background-color: #282c36;
+            font-size: 0.675rem;
+            border-bottom: 2px solid #f1592a;
+        }
+    }
+    .input-group-addon {
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #959595;
+        text-align: center;
+        background-color: #e9ecef;
+        border: 1px solid #c8c8c8;
+        border-radius: 0.125rem;
+        .ti-key{
+            &.rotate{
+                transform: rotate(180deg) scaleX(-1);
+                display: block;
+                position: relative;
+                top: 6px;
+            }
+        }
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+  
+    a {
+        color: #f1592a;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+    i {
+        padding: 0px 10px;
+    }
+    .form-control {
+        height: 40px;
+        &::placeholder{
+            color: #959595;
+        } 
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #f1592a;
+        border-color: #f1592a;
+    }
+}
+
+
+// reset password section
+
+.login {
+    background: #F7F7F7;
+    .login_wrapper {
+        right: 0px;
+        margin: 0px auto;
+        margin-top: 5%;
+        max-width: 350px;
+        position: relative;
+        .login_form {
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            z-index: 22;
+            .login_content {
+                margin: 0 auto;
+                padding: 25px 0 0;
+                position: relative;
+                text-align: center;
+                text-shadow: 0 1px 0 #fff;
+                min-width: 421px;
+                font-family: 'Lato', sans-serif;
+                color: #73879C;
+                form {
+                    margin: 20px 0;
+                    position: relative;
+                }
+                .btn{font-size: 14px;}
+                h1 {
+                    font: normal 25px Helvetica, Arial, sans-serif;
+                    letter-spacing: -0.05em;
+                    line-height: 20px;
+                    margin: 10px 0 30px;
+                    &:after, &:before {
+                        content: "";
+                        height: 1px;
+                        position: absolute;
+                        top: 10px;
+                        width: 20%;
+                    }
+                    &:before {
+                        background: #7e7e7e;
+                        left: 0;
+                    }
+                    &:after {
+                        background: #7e7e7e;
+                        right: 0;
+                    }
+                }
+                .panel-body {
+                    padding: 15px;
+                }
+                .separator {
+                    border-top: 1px solid #D8D8D8;
+                    margin-top: 10px;
+                    padding-top: 10px;
+                }
+                a {
+                    font-size: 12px;
+                    margin: 10px 15px 0 0;
+                    color: #5A738E;
+                }
+                input{font-family: 'Lato', sans-serif;}
+                .btn-primary {
+                    color: #fff;
+                    background-color: #f1592a;
+                    border-color: #f1592a;
+                }
+            }
+        }
+    }
+}
